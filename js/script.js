@@ -16,3 +16,5 @@ console.log(listaCognomi);
 
 // trovare la posizione del cognomeUtente
 console.log("Il cognome occupa la posizione:" + listaCognomi.indexOf(cognomeUtente));
+
+document.getElementById("posizione").innerHTML = "Il tuo cognome &eacute; nella posizione:" + " " +  listaCognomi.indexOf(cognomeUtente);
