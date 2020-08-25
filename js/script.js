@@ -4,17 +4,20 @@ do {
 } while (!isNaN(cognomeUtente))
 
 // 2. Creare lista array con cognomi
-var listaCognomi = ["Bianchi", "Rossi", "Duzioni", "balsano", "verdi"];
+var listaCognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
 
 // 3. Inserire cognome utente nella array
 listaCognomi.push(cognomeUtente);
-console.log(listaCognomi);
+// console.log(listaCognomi);
 
 //4. Ordinare in ordine alfabetico la lista dei cognomi
-listaCognomi.sort();
-console.log(listaCognomi);
+var listaAlafabeto = listaCognomi.sort();
 
-// trovare la posizione del cognomeUtente
-console.log("Il cognome occupa la posizione:" + listaCognomi.indexOf(cognomeUtente));
+for ( var i = 0; i < listaAlafabeto.length; i++) {
+  var lista = document.getElementById("lista").innerHTML;
+  document.getElementById("lista").innerHTML = lista + "<li>" + listaAlafabeto[i] + "</li>";
+}
 
-document.getElementById("posizione").innerHTML = "Il tuo cognome &eacute; nella posizione:" + " " +  listaCognomi.indexOf(cognomeUtente);
+//5. trovare la posizione del cognomeUtente
+var posizioneCognome = listaCognomi.indexOf(cognomeUtente) + 1;
+document.getElementById("posizione").innerHTML = "Il tuo cognome &eacute; nella posizione:" + " " +  posizioneCognome;
