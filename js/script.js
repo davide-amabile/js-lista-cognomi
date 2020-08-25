@@ -5,3 +5,11 @@ do {
 
 // 2. Creare lista array con cognomi
 var listaCognomi = ["Bianchi", "Rossi", "Duzioni", "balsano", "verdi"];
+
+// 3. Inserire cognome utente nella array
+listaCognomi.push(cognomeUtente);
+console.log(listaCognomi);
+
+//4. Ordinare in ordine alfabetico la lista dei cognomi
+listaCognomi.sort();
+console.log(listaCognomi);
