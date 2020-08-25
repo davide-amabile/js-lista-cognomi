@@ -13,3 +13,6 @@ console.log(listaCognomi);
 //4. Ordinare in ordine alfabetico la lista dei cognomi
 listaCognomi.sort();
 console.log(listaCognomi);
+
+// trovare la posizione del cognomeUtente
+console.log("Il cognome occupa la posizione:" + listaCognomi.indexOf(cognomeUtente));
